@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduGenie AI</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>🎓 EduGenie</h1>
+        <p>Google Gemini Powered Learning Assistant</p>
+    </header>
+
+    <div id="chatBox" class="chat-box">
+
+        <div class="bot-message">
+            👋 Hello! I'm <b>EduGenie</b>.<br>
+            Ask me anything about programming, AI, DBMS, OS, DSA, or any subject.
+        </div>
+
+    </div>
+
+    <div class="input-area">
+
+        <textarea
+            id="question"
+            placeholder="Ask your question here..."></textarea>
+
+        <div class="buttons">
+            <button onclick="askAI()">Ask AI</button>
+            <button class="clear-btn" onclick="clearChat()">Clear</button>
+        </div>
+
+    </div>
+
+</div>
+<div class="buttons">
+
+<button onclick="askAI()">
+Ask AI
+</button>
+
+<button onclick="generateQuiz()">
+Generate Quiz
+</button>
+
+<button onclick="generateRoadmap()">
+Roadmap
+</button>
+
+<button class="clear-btn" onclick="clearChat()">
+Clear
+</button>
+
+</div>
+<script src="/static/script.js"></script>
+
+</body>
+</html>
